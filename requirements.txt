@@ -1,3 +1,3 @@
-Groq
-Streamlit
-python-dotenv
+groq
+streamlit
+
