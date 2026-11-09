@@ -5,7 +5,7 @@ client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # ── PAGE SETUP ──────────────────────────────────────────
 st.title("My AI Chatbot 🤖")
-st.caption("Powered by Groq + Llama 3")
+st.caption("Powered by Groq + open-source GPT-OSS models")
 
 # ── SIDEBAR ─────────────────────────────────────────────
 st.sidebar.title("Settings")
@@ -14,10 +14,10 @@ st.sidebar.title("Settings")
 model = st.sidebar.selectbox(
     "Choose AI Model",
     options=[
-        "llama-3.1-8b-instant",
-        "llama-3.3-70b-versatile"
+        "openai/gpt-oss-20b",
+        "openai/gpt-oss-120b"
     ],
-    help="8b is faster. 70b is smarter but slightly slower."
+    help="20b is faster. 120b is smarter but slightly slower."
 )
 
 # Feature 2 — System Prompt Input
